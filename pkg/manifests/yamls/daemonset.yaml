@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: mutualcpu
+  labels:
+    app: mutualcpu
+spec:
+  selector:
+    matchLabels:
+      name: mutualcpu
+  template:
+    metadata:
+      labels:
+        name: mutualcpu
+    spec:
+      containers:
+        - name: mutualcpu
+          image: quay.io/jitesoft/alpine
