@@ -1,0 +1,12 @@
+apiVersion: mutualcpu.openshift.io/v1alpha1
+kind: MutualCPU
+metadata:
+  labels:
+    app.kubernetes.io/name: mutualcpu
+    app.kubernetes.io/instance: mutualcpu-sample
+    app.kubernetes.io/part-of: mutualcpu-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: mutualcpu-operator
+  name: mutualcpu-sample
+spec:
+  # TODO(user): Add fields here
